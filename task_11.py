@@ -1,5 +1,3 @@
-#  Task - Done!
-
 class Dessert:
 
     def __init__(self, name=None, calories=None):
@@ -27,8 +25,3 @@ class Dessert:
 
     def is_delicious(self):
         return self._name is not None
-
-
-
-
-

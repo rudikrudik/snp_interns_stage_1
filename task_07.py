@@ -1,5 +1,3 @@
-#  Task - Done!
-
 def combine_anagrams(target_list: list) -> list:
     temp_list = []
     temp_word = []

@@ -1,5 +1,3 @@
-#  Task - Done!
-
 def is_palindrome(target_str: str) -> bool:
     temp_str = []
 
@@ -18,4 +16,3 @@ def is_palindrome(target_str: str) -> bool:
         return True
     else:
         return False
-

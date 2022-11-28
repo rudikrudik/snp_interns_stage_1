@@ -1,4 +1,3 @@
-#  Task - Done!
 from task_11 import Dessert
 
 
@@ -18,11 +17,4 @@ class JellyBean(Dessert):
 
     def is_delicious(self):
         return self._flavor != 'black licorice'
-
-
-# jelly = JellyBean()
-# jelly.flavor = 'black licorice'
-# jelly.name = 'jelly'
-# print(jelly.is_delicious())
-# print(jelly.name)
 

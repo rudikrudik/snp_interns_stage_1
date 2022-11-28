@@ -1,5 +1,3 @@
-#  Task - Done!
-
 def sort_list(target_list: list) -> list:
     temp_list = []
 
@@ -22,9 +20,3 @@ def sort_list(target_list: list) -> list:
     temp_list.append(min_in_target_list)
 
     return temp_list
-
-
-#print(sort_list([])) # => []
-#print(sort_list([2, 4, 6, 8])) # => [8, 4, 6, 2, 2]
-#print(sort_list([1])) # => [1, 1]
-#print(sort_list([1, 2, 1, 3])) # => [3, 2, 3, 1, 1]
