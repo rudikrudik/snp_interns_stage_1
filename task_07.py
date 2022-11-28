@@ -2,9 +2,11 @@ def combine_anagrams(target_list: list) -> list:
     temp_dict = {}
 
     for i in target_list:
-        if not temp_dict.get(''.join(sorted(i))):
-            temp_dict[''.join(sorted(i))] = [i]
+        key = ''.join(sorted(i))
+        if temp_dict.get(key):
+            temp_dict[key].append(i)
+
         else:
-            temp_dict[''.join(sorted(i))].append(i)
+            temp_dict[key] = [i]
 
     return list(temp_dict.values())
