@@ -17,4 +17,3 @@ class JellyBean(Dessert):
 
     def is_delicious(self):
         return self._flavor != 'black licorice'
-
