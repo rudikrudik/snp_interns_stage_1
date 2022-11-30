@@ -8,7 +8,7 @@ class NoSuchStrategyError(Exception):
         return 'The rules of the game do not allow these arguments to be accepted.'
 
 
-def rps_game_winner(game_player: list) -> list:
+def rps_game_winner(game_player: list) -> str:
 
     try:
         if len(game_player) > 2:
@@ -21,9 +21,10 @@ def rps_game_winner(game_player: list) -> list:
 
     else:
         if game_player[0][1] == game_player[1][1]:
-            return game_player[0]
+            return ' '.join(game_player[0])
 
         if game_player[0][1] + game_player[1][1] in ('PR', 'SP', 'RS'):
-            return game_player[0]
+            return ' '.join(game_player[0])
+
         else:
-            return game_player[1]
+            return ' '.join(game_player[1])
