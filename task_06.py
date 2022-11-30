@@ -1,11 +1,21 @@
+class WrongNumberOfPlayersError(Exception):
+    def __str__(self):
+        return 'The number of players cannot be more than 2.'
+
+
+class NoSuchStrategyError(Exception):
+    def __str__(self):
+        return 'The rules of the game do not allow these arguments to be accepted.'
+
+
 def rps_game_winner(game_player: list) -> list:
 
     try:
         if len(game_player) > 2:
-            raise ValueError('WrongNumberOfPlayersError')
+            raise WrongNumberOfPlayersError
         for i in game_player:
             if i[1] not in 'RPS':
-                raise ValueError('NoSuchStrategyError')
+                raise NoSuchStrategyError
     except ValueError as e:
         return e
 
